@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DicomFileOpener.exe" version="1.0.0.15" publicKeyToken="23d265727aa2d7ba" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="xray_512_gyX_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DicomFileOpener" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DicomFileOpener.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClearCanvas.Common.dll" size="384000">
+      <assemblyIdentity name="ClearCanvas.Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lIxJGuhxodHRqtGGATFGT6VBKmIsxLXzrnuCaDPODgI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClearCanvas.Dicom.dll" size="2370048">
+      <assemblyIdentity name="ClearCanvas.Dicom" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dgRU2tCIxYg5rja+OS8k9DygPcjVgf3CA9jIX+/gi4A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DicomFileOpener.exe" size="55264">
+      <assemblyIdentity name="DicomFileOpener" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iCy5vSGV68Rq7SNc9p3pR0EWR7p8nwSOfRVsxroQCK4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="log4net.dll" size="304640">
+      <assemblyIdentity name="log4net" version="1.2.15.0" publicKeyToken="669E0DDF0BB1AA2A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9HuHKCHfpqTP+6WgI2cgA5G1R2mGZ27TK1745O6B/rI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DicomFileOpener.exe.config" size="947">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m9hxeca9hH1KkOb5eoirFeq6/vpjKajJAawpWy16p1o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="xray_512_gyX_icon.ico" size="45322">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2sP52E++0qICyBKM7BEWlQG2/i6irnFNsRl7J32BGBY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=HECTEC\florian.kiendl" issuerKeyHash="32544998b0f24c91ff85672f2f834992ccb209a5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HEDU2i4XVhib83FjS5w+x9pH6h8LoL/PlE9Y0xmN+ak=</DigestValue></Reference></SignedInfo><SignatureValue>nX4sIqu0yRuXkiKq8xWTs+k3PPdst0UH0f/6DKwPmQJVfbG0oFdK8dtF52zfqxDPPL25QpKVzzCFSA2vDLMhbZ55aa+Bk62Mqsw4rin/HYOZ/PODlXzI8HypHiOZFR/tFzBowVOyYeTWb5jxX2fswHNSGsE0/OSfc35hDrc8M5g=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6VYXitgkSwYswidMMFglWdecOjwNpHH7EfbIku9FF1KvksfRjmMkANfAfICfTSQ6tu9rdxxMR4VtRnYkv2nGJE/q4tWoTYL/04MrUPzInSf5MzbdWqjYIj5fu2DzEnMb7UxooGwH+7InXHFx0j9//NI2No8cRRHpHnDLKVLYXkk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a9f98d19d3584f94cfbfa00b1fea47dac73e9c4b6371f39b1856172edad4401c" Description="" Url=""><as:assemblyIdentity name="DicomFileOpener.exe" version="1.0.0.15" publicKeyToken="23d265727aa2d7ba" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HECTEC\florian.kiendl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5ZqBCLkIw03vZX96DAQGL7AsnKL1b8GPbkw8Ot/xAd4=</DigestValue></Reference></SignedInfo><SignatureValue>ON6a5CJOy1eGG/R/+IveMnluMiwTaRCdCPfC6mV9N4k2c0np07/7+sL6EUe/k0Fsh8nHZXsVnt55PsDQKOpocwwZ1Npyqr3Bf+nkBPCfLWGVwSCPfywkbIkD2kfg0qs5/0+yGTI8kE530m983PPY8158nBL9uI6L90ZKdzdeOkA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6VYXitgkSwYswidMMFglWdecOjwNpHH7EfbIku9FF1KvksfRjmMkANfAfICfTSQ6tu9rdxxMR4VtRnYkv2nGJE/q4tWoTYL/04MrUPzInSf5MzbdWqjYIj5fu2DzEnMb7UxooGwH+7InXHFx0j9//NI2No8cRRHpHnDLKVLYXkk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQG0L970vpDoRF/HNdb06s+TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioASABFAEMAVABFAEMAXABmAGwAbwByAGkAYQBuAC4AawBpAGUAbgBkAGwwHhcNMTYwNjI3MDc1NDI3WhcNMTcwNjI3MTM1NDI3WjA1MTMwMQYDVQQDHioASABFAEMAVABFAEMAXABmAGwAbwByAGkAYQBuAC4AawBpAGUAbgBkAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOlWF4rYJEsGLMInTDBYJVnXnDo8DaRx+xH2yJLvRRdSr5LH0Y5jJADXwHyAn00kOrbva3ccTEeFbUZ2JL9pxiRP6uLVqE2C/9ODK1D8yJ0n+TM23Vqo2CI+X7tg8xJzG+1MaKBsB/uyJ1xxcdI/f/zSNjaPHEUR6R5wyylS2F5JAgMBAAEwDQYJKoZIhvcNAQELBQADgYEA5kZOmLwW9RZGE83Looh1/neW0z+6GmFKfPXCHZSQj0lM9Aj4ONmw3wTX8SEpSkWIq2Jy5+BQgx+TiMvzPoVY3N8Oprv3FFWkMcB4uAxHqp0COSr1sWJ1N9BEAATcc0ymS1kyuVorfBj5K+GSFnbNjomG8rb/56bznM8MCcvSZiU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
